@@ -1,12 +1,16 @@
 
 
 
+import 'dart:math';
+
 class Circle {
 
   double radius;
 
 
   Circle(double radius): radius = radius;
+
+  double getArea() => radius * radius * pi;
 
   // this string will realise when an object of class Circle is invoked as a String
   @override
@@ -20,5 +24,6 @@ void main(){
 
   print(circle.radius);
   print(circle);
+  print(circle.getArea());
 
 }
