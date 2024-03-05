@@ -1,2 +1,1 @@
-# exercicio-dart
-Exercicios de Dart da aula de Desenvolvimento Mobile
+# Exercicios em Dart da aula de Desenvolvimento Mobile
