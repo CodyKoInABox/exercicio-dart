@@ -35,9 +35,8 @@ class Rectangle extends Shape {
 
 
 class Square extends Rectangle{
-  double side;
 
-  Square(double side, String color, bool filled): side = side, super(side, side, color, filled);
+  Square(double side, String color, bool filled): super(side, side, color, filled);
 }
 
 
@@ -47,5 +46,4 @@ void main(){
 
   print(square.length);
   print(square.width);
-  print(square.side);
 }
