@@ -60,7 +60,10 @@ class Square extends Rectangle{
 void main(){
 
   Square square = new Square(5, 'red', false);
+  Circle circle = new Circle(3, 'blue', true); 
 
   print(square);
   print(square.getArea());
+  print(circle);
+  print(circle.getArea());
 }
