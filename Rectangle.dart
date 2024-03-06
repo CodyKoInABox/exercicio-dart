@@ -8,8 +8,8 @@ class Rectangle {
   double getLength() => length;
   double getWidth() => width;
 
-  double setLength(double length) => length = length;
-  double setWidth(double width) => width = width;
+  void setLength(double length) => length = length;
+  void setWidth(double width) => width = width;
 
   double getArea() => length * width;
   double getPerimeter() => (length + width) * 2;
