@@ -22,6 +22,9 @@ class Circle extends Shape {
   double radius;
 
   Circle(double radius, String color, bool filled): radius = radius, super(color, filled);
+
+  @override
+  String toString() => 'Circle[radius=$radius, color=$color, filled=$filled]';
 }
 
 
@@ -31,12 +34,18 @@ class Rectangle extends Shape {
   double width;
 
   Rectangle(double length, double width, String color, bool filled): length = length, width = width, super(color, filled);
+
+  @override
+  String toString() => 'Rectangle[length=$length, width=$width, color=$color, filled=$filled]';
 }
 
 
 class Square extends Rectangle{
 
   Square(double side, String color, bool filled): super(side, side, color, filled);
+
+  @override
+  String toString() => 'Square[side=$length, color=$color, filled=$filled]';
 }
 
 
@@ -46,4 +55,5 @@ void main(){
 
   print(square.length);
   print(square.width);
+  print(square);
 }
