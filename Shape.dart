@@ -1,4 +1,6 @@
 
+import 'dart:math';
+
 class Shape {
 
   String color;
@@ -22,6 +24,9 @@ class Circle extends Shape {
   double radius;
 
   Circle(double radius, String color, bool filled): radius = radius, super(color, filled);
+  
+  double getArea() => radius * radius * pi;
+  double getPerimeter() => radius * pi * 2;
 
   @override
   String toString() => 'Circle[radius=$radius, color=$color, filled=$filled]';
@@ -34,6 +39,9 @@ class Rectangle extends Shape {
   double width;
 
   Rectangle(double length, double width, String color, bool filled): length = length, width = width, super(color, filled);
+
+  double getArea() => length * width;
+  double getPerimeter() => (length + width) * 2;
 
   @override
   String toString() => 'Rectangle[length=$length, width=$width, color=$color, filled=$filled]';
@@ -53,7 +61,6 @@ void main(){
 
   Square square = new Square(5, 'red', false);
 
-  print(square.length);
-  print(square.width);
   print(square);
+  print(square.getArea());
 }
