@@ -41,3 +41,18 @@ class MovablePoint implements Movable {
   String toString() => '($x, $y), speed=($x, $y)';
 
 }
+
+
+void main(){
+
+  var point = MovablePoint(0, 0, 1, 1);
+
+  print(point.toString());
+  point.moveUp();
+  point.moveUp();
+  point.moveRight();
+  print(point.toString());
+  point.moveLeft();
+  point.moveDown();
+  print(point.toString());
+}
