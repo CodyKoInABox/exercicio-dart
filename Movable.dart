@@ -42,6 +42,15 @@ class MovablePoint implements Movable {
 
 }
 
+// class MovableCircle implements Movable {
+
+//   int radius;
+//   MovablePoint center = new MovablePoint(x, y, xSpeed, ySpeed);
+
+//   MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius): x = x, y = y, xSpeed = xSpeed, ySpeed = ySpeed, radius = radius;
+// }
+
+
 
 void main(){
 
